@@ -1,5 +1,5 @@
 //#region Variables ---------------------------
-// var varName = vale;
+var varName = vale;
 // data types [string, number, boolean]
 // string ---> 'name' or "name"
 // number ---> 122323
@@ -53,26 +53,48 @@ console.log(temp, typeof temp);
 //#region array and loops ---------------------
 // index start with 0 0   1   2   3
 var studentsScores = [10, 20, 23, 33, 40, 23, 0, 5];
-console.log(studentsScores);
+// 40 --> full mark
+// < 20 --> faild
+// > 20 --> passed
+var passedStudents = [];
+var failedStudents = [];
 
-// studentsScores[0] = studentsScores[0] + 3;
-// studentsScores[1] = studentsScores[1] + 3;
-// studentsScores[2] = studentsScores[2] + 3;
-// studentsScores[3] = studentsScores[3] + 3;
-// console.log(studentsScores);
-
-// loop 
-// while loop 
+// loop
+// while loop
 // 1 --> first step (initial value)
 // 2 --> condition
-// 3 --> second step 
+// 3 --> second step
 
-var index = 0; 
-while (index <= 4) { 
-  console.log(studentsScores[index]);
-  studentsScores[index] = studentsScores[index] + 3;
-  index = index + 1;
+var index = 0;
+while (index < studentsScores.length) {
+  // studentsScores[index] = studentsScores[index] + 3;
+
+  if (studentsScores[index] >= 20) console.log(studentsScores[index], "Passed");
+  else console.log(studentsScores[index], "Failed");
+
+  index += 1;
 }
 
-console.log(studentsScores);
+var degree = [23, 10, -10, 50, 40, 19, 20];
+// < 10 cold
+// > 10 hot
+// > 40 very hot
+
+console.log(degree);
+
+var index = 0;
+while (index <= degree.length) {
+
+  if (degree[index] < 10) {
+    console.log(degree[index], "cold");
+  } else if (degree[index] > 10 && degree[index] < 40) {
+    console.log(degree[index], "hot");
+  } else if (degree[index] >= 40) {
+    console.log(degree[index], "very hot");
+  }
+
+  index += 1;
+}
+
+// console.log(studentsScores);
 //#endregion -----------------------------------
