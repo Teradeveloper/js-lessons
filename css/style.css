@@ -1,0 +1,13 @@
+#item {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: red;
+}
+
+#item-2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: green;
+}
