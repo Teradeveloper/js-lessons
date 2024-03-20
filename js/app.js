@@ -1,4 +1,4 @@
-//#region Variables ---------------------------
+// #region Variables ---------------------------
 var varName = vale;
 // data types [string, number, boolean]
 // string ---> 'name' or "name"
@@ -48,9 +48,9 @@ console.log(numberOfItems, typeof numberOfItems);
 var temp = 26;
 console.log(temp, typeof temp);
 
-//#endregion Variables ------------------------
+// #endregion Variables ------------------------
 
-//#region array and loops ---------------------
+// #region array and loops ---------------------
 // index start with 0 0   1   2   3
 var studentsScores = [10, 20, 23, 33, 40, 23, 0, 5];
 // 40 --> full mark
@@ -84,7 +84,7 @@ console.log(degree);
 
 var index = 0;
 while (index <= degree.length) {
-
+  
   if (degree[index] < 10) {
     console.log(degree[index], "cold");
   } else if (degree[index] > 10 && degree[index] < 40) {
@@ -97,4 +97,25 @@ while (index <= degree.length) {
 }
 
 // console.log(studentsScores);
-//#endregion -----------------------------------
+// #endregion array and loops -----------------------------------
+
+// #region concatination -----------------------
+var arr = [10, 2, 4, 28, 47, 9, 25];
+
+var index = 0; 
+while (index < arr.length) {
+  if (arr[index] <= 20) {
+    // console.log('before adding 3: number = ' + arr[index] + " after adding 3: number = " + (arr[index] += 3));
+    console.log(`before adding 3: number = ${ arr[index] } after adding 3: number = ${ arr[index] += 3 }`);
+  } else if (arr[index] > 20 && arr[index] <= 30) {
+    // console.log("before subtracting 5: number = " + arr[index] + " after subtracting 5: number = " + (arr[index] -= 5));
+    console.log(`before subtracting 5 : number = ${ arr[index] } after subtracting 5: number = ${ arr[index] -= 5 }`);
+
+  } else if (arr[index] > 30) {
+    // console.log("before multiplying by 2: number = " + arr[index] + " after multiplying by 2: number = " + (arr[index] *= 2));
+    console.log(`before multiplying by 2: number = ${ arr[index] } after multiplying by 2: number = ${ arr[index] *= 2 }`);
+  }
+
+  index += 1;
+}
+// #endregion concatination 
