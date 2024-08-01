@@ -44,3 +44,4 @@ while (index <= degree.length) {
 }
 
 console.log(studentsScores);
+

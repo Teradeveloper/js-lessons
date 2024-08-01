@@ -8,11 +8,11 @@ var divItem = document.getElementById("item");
 console.log(typeof divItem);
 
 // Age of a user on a social media platform.
-var age = 23;
+var age = 23; // assignment
 console.log(age, typeof age);
 
 // Name of a user in a chat application.
-var name = "Asmaa";
+var name = `Asmaa`;
 console.log(name, typeof name);
 
 // Social media post content.
